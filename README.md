@@ -9,8 +9,11 @@ commande: 'npm run start'
 
 pour envoyer des donner a l'api:
 - route: '/api/bsq'
+- headers: { 
+              "Content-Type": "application/json" 
+           }
 - data: {
-                "expr": expression(ex: 3+4-1)
+                "expr": (string) expression(ex: "3+4-1")
         }
 
 - return: {
